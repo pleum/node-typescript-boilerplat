@@ -1,0 +1,21 @@
+{
+  "name": "node-typescript-boilerplate",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "private": true,
+  "scripts": {
+    "start:prod": "node dist/main.js",
+    "start:dev": "nodemon src/main.ts",
+    "start:debug": "nodemon --inspect src/main.ts",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "build": "tsc"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.6.2",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
